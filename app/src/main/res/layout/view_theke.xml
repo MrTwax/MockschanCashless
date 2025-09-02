@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/thekeRoot"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnBackTheke"
+        android:text="← Zurück"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Big balance line (set text in code: "Token: 12 T → 9 T") -->
+    <TextView
+        android:id="@+id/tokenDisplay"
+        android:text="Token: -"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Red warning area if not enough tokens -->
+    <TextView
+        android:id="@+id/tokenWarning"
+        android:text=""
+        android:textColor="#B00020"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Product list -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/productList"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+    <!-- Order note, visible for up to 2 minutes after payment -->
+    <TextView
+        android:id="@+id/orderNote"
+        android:text=""
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFF4CE"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Action buttons -->
+    <LinearLayout
+        android:id="@+id/actionRow"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:text="Abbrechen"
+            android:layout_marginEnd="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="56dp" />
+
+        <Button
+            android:id="@+id/btnPay"
+            android:text="Bezahlen"
+            android:layout_marginStart="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="56dp" />
+    </LinearLayout>
+
+</LinearLayout>

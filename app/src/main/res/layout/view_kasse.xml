@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kasseRoot"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Zurück -->
+    <Button
+        android:id="@+id/btnBackKasse"
+        android:text="← Zurück"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Hinweis: wird sichtbar wenn kein Band gescannt ist -->
+    <TextView
+        android:id="@+id/kasseScanHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Bitte Armband scannen, um aufzuladen oder auszuzahlen."
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textColor="#D32F2F" />
+
+    <!-- Aktuelle UID -->
+    <TextView
+        android:id="@+id/uidInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Gescannt: -"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Token aufladen -->
+    <Button
+        android:id="@+id/btnLoadTokens"
+        android:text="Token aufladen"
+        android:textSize="22sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:enabled="false" />
+
+    <!-- Guthaben auszahlen -->
+    <Button
+        android:id="@+id/btnRefund"
+        android:text="Guthaben auszahlen"
+        android:textSize="22sp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:enabled="false" />
+
+    <!-- Statuskarte -->
+    <TextView
+        android:id="@+id/kasseStatusCard"
+        android:text="Letzte UID: -\nToken: -"
+        android:textSize="29sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#002366</color>
+    <color name="colorPrimaryDark">#001b4d</color>
+    <color name="colorAccent">#FFA500</color> <!-- z. B. orange Akzentfarbe -->
+    <color name="white">#FFFFFF</color>
+    <color name="textOnPrimary">#FFFFFF</color>
+</resources>
+

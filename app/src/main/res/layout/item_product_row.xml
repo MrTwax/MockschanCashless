@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/productRowRoot"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_marginBottom="6dp"
+    android:background="#F7F7F7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Name + price -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtProductName"
+            android:text="Produktname"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- e.g. "Preis: 2.0 T" -->
+        <TextView
+            android:id="@+id/txtProductPrice"
+            android:text="Preis: - T"
+            android:textSize="18sp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Quantity control -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:text="-"
+            android:textSize="20sp"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:id="@+id/txtQty"
+            android:text="0"
+            android:textSize="20sp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:text="+"
+            android:textSize="20sp"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+    </LinearLayout>
+
+</LinearLayout>
